@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Application Bancaire</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Application Bancaire</h1>
+  </header>
+  <div class="container">
+    <h2>Sélectionnez un utilisateur</h2>
+    <select id="userSelect">
+      <option value="">-- Sélectionnez --</option>
+    </select>
+
+    <!-- Bloc affichant le solde du compte -->
+    <div id="accountInfo" style="display: none;">
+      <h3>Solde du compte : <span id="accountBalance"></span> €</h3>
+    </div>
+
+    <div id="actions" style="display: none;">
+      <h2>Actions</h2>
+      <button id="withdrawBtn">Retirer de l'argent</button>
+      <button id="depositBtn">Déposer de l'argent</button>
+      <button id="transferBtn">Transférer de l'argent</button>
+    </div>
+
+    <div id="actionForm" class="action-section" style="display: none;">
+      <!-- Le formulaire dynamique sera affiché ici -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
